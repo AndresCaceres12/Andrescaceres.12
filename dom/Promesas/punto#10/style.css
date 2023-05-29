@@ -1,0 +1,36 @@
+body{
+    background-image: linear-gradient(rgb(79, 79, 230),rgb(161, 149, 149));
+    height: 100vh;
+    padding: 40px;
+}
+.todo{
+    height: 50%;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+    border: 2px black solid;
+    background-color: #f1f1fA;
+    padding: 20px;
+    border-radius: 30px;
+}
+.todo h1{
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#entrada{
+    padding: 8px;
+    border-radius: 20px;
+}
+#boton{
+    width: 100px;
+    border-radius: 20px ;
+    margin:22px 130px;
+    background-color: darkgray;
+    padding: 5px;
+}
+#boton:hover{
+    background-color: grey;
+    cursor: pointer;
+}
