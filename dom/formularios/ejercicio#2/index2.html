@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tareas</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="crear">
+        <div class="forma">
+          <div class="form">
+            <h1>Crear tarea</h1>
+            <div class="grupo">
+              <input type="text" name="" id="titulo" /><span class="barra"></span>
+              <label for="">Titulo</label>
+            </div>
+            <div class="grupo">
+              <input type="text" name="" id="contenido" /><span
+                class="barra"
+              ></span>
+              <label for="">contenido</label>
+            </div>
+            <div class="grupo">
+              <input type="datetime-local" name="" id="fecha" /><span
+                class="barra"
+              ></span>
+              <label for="">Fecha</label>
+              
+            </div>
+            <button id="submit" >Agregar tarea</button>
+          </div>
+        </div>
+      </div>
+      <div class="ver_las_tareas">
+        <div class="pendiente">
+            <h3>Tareas pendientes</h3>
+            <ul id="pendiente-list">
+              <!-- Elementos li -->
+            </ul>
+          </div>
+          
+          <div class="proceso">
+            <h3>Tareas en proceso</h3>
+            <ul id="proceso-list">
+              <!-- Elementos li -->
+            </ul>
+          </div>
+          
+          <div class="completado">
+            <h3>Tareas Terminadas</h3>
+            <ul id="completado-list">
+              <!-- Elementos li -->
+            </ul>
+          </div>
+          
+      </div>
+    </div>
+
+    <script src="form2.js"></script>
+  </body>
+</html>
