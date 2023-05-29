@@ -1,0 +1,9 @@
+.texto{
+    width: 250px;
+    height: 200px;
+    background-image: linear-gradient(yellow , red);
+    text-align: center;
+    border-radius: 20px;
+    padding: 14px;
+    
+}

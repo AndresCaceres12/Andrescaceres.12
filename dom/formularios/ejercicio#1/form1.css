@@ -1,0 +1,98 @@
+body {
+  background: linear-gradient(blueviolet, lightskyblue);
+  display: flex;
+  height: 100vh;
+}
+
+.ingresan {
+  background-color: #f1f1fA;
+  width: 100%;
+}
+
+.mb-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+i {
+  font-size: 30px;
+  margin: 0;
+}
+
+i:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.añadir {
+  display: flex;
+}
+
+input {
+  border-radius: 20px;
+  margin: 0;
+  padding: 2px;
+}
+
+.todo {
+  padding: 80px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conte {
+  padding: 60px;
+  width: 50%;
+  height: 100%;
+  border: 2px black solid;
+  border-radius: 20px;
+  background-color: #f1f1fA;
+}
+
+li {
+  list-style: none;
+  padding: 8px;
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  color: darkslategray;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+#lista {
+}
+
+.eliminar {
+  margin-left: 50px;
+  background-color: cadetblue;
+  border-radius: 10px;
+}
+
+.añadirNota {
+  display: flex;
+}
+
+.añadirTitulo {
+  display: flex;
+}
+
+.ocultar {
+  display: none;
+}
+
+.editar {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.editar:hover {
+  background-color: red;
+  color: white;
+  transform: scale(1.1);
+}

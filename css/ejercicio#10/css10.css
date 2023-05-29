@@ -1,0 +1,39 @@
+body{
+  margin: 0;
+  padding: 0;
+  
+}
+html{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card {
+  position: absolute;
+  left: 42%;
+  top: 4%;
+    background-color: white;
+    box-shadow: 0 0 4px 4px grey;
+    border-radius: 4px;
+    align-items: center;
+    height: 230px;
+    width: 200px;
+    
+}
+.card .title {
+    color: white;
+    background-color: grey;
+    padding: 8px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .card .body {
+    font-style: italic;
+    text-align: center;
+    padding: 8px;
+  }
+  .card .foot {
+    color: white;
+    background-color: grey;
+    padding: 8px;
+    text-align: center;
+  }

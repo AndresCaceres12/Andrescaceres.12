@@ -1,0 +1,33 @@
+li{
+    color:  gray;
+}
+b{
+    color:black
+}
+.numeros{
+    color:blue
+}
+
+.contenedor{
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    padding: 0.5em;
+}
+@media all and (min-width: 600px){
+    .columna{
+        width :100%;
+        float: left;
+        display: flex;
+    }
+    }
+    @media all and (max-width: 400px){
+        .contenedor{
+            flex-direction: column;
+        }
+        
+           }
+        
+
+        
