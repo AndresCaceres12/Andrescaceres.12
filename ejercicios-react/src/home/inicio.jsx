@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const StyledLink = styled(Link)`
   margin: 1rem;
-  margin-bottom: 2rem; // Añade esto para dar más espacio debajo
+  margin-bottom: 1rem; // Añade esto para dar más espacio debajo
   text-decoration: none;
   background-color: #5cb85c;
   border: none;
@@ -24,6 +24,7 @@ const Inicio = () => {
     <div className="inicio">
       <h1>Bienvenido a mi proyecto</h1>
       {/* Mueve los botones aquí */}
+      <div className="inicio2">
       <StyledLink to="/">Inicio</StyledLink>
       <StyledLink to="/ejercicio1">Ejercicio 1</StyledLink>
       <StyledLink to="/ejercicio2">Ejercicio 2</StyledLink>
@@ -34,6 +35,7 @@ const Inicio = () => {
       <StyledLink to="/ejercicio7">Ejercicio 7</StyledLink>
       <StyledLink to="/ejercicio8">Ejercicio 8</StyledLink>
       <StyledLink to="/ejercicio9">Ejercicio 9</StyledLink>
+      </div>
       <StyledLink to="/ejercicio10">Ejercicio 10</StyledLink>
       <StyledLink to="/ejercicio11">Ejercicio 11</StyledLink>
       <StyledLink to="/ejercicio12">Ejercicio 12</StyledLink>
