@@ -11,6 +11,7 @@ import Ejercicio8 from "./ejercicio-8/page/ejercicio8";
 import Ejercicio9 from "./ejercicio-9/page/ejercicio9";
 import Ejercicio10 from "./ejercicio-10/page/ejercicio10";
 import Ejercicio11 from "./ejercicio-11/page/ejercicio11";
+import Ejercicio12 from "./ejercicio-12/page/ejercicio12";
 import { ShoppingCart } from "./ejercicio-11/components/ShoppingCart";
 import { ShoppingCartcontents } from "./ejercicio-11/contexts/ShoppingCartcontents";
 
@@ -48,6 +49,7 @@ element={
 </ShoppingCartcontents>
 }
 />
+<Route path="/ejercicio12" element={<Ejercicio12 />} />
 </Routes>
 </div>
 );
