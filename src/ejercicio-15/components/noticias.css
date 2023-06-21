@@ -1,0 +1,105 @@
+    .contenido23 {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid rgb(83, 83, 151);
+    background-color: #f1f2f3;
+    }
+  
+    .title {
+    font-family: Arial, sans-serif;
+    color: rgb(64, 64, 104);
+    text-align: center;
+    }
+    
+    .title-big {
+    font-size: 36px;
+    }
+    
+    .title-small {
+    font-size: 24px;
+    }
+    .input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    }
+    
+    .label {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    }
+    
+    .input, .select, .button {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 5px;
+    }
+    
+    .input {
+    width: 150px;
+    }
+    
+    .select {
+    width: 100px;
+    }
+    
+    .button {
+    width: 80px;
+    }
+    .news-list {
+    list-style-type: none;
+    }
+    
+    .news-item {
+    margin-bottom: 20px;
+    }
+    
+    .news-title {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    }
+    
+    .news-content {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    }
+
+    @media screen and (max-width:600px) {
+    
+    .input-group {
+    flex-direction: column;
+    margin-bottom:5px
+    }
+    
+    .input, .select, .button {
+    width:auto
+    }
+    
+    .news-list {
+    padding-left:10px
+    }
+    
+    .news-title {
+    font-size:16px
+    }
+    
+    .news-content {
+    font-size:12px
+    }
+    
+    }
+    .contenido23:hover {
+    box-shadow:-5px -5px rgb(107, 107, 136)
+    }
+    
+    .input, .select, .button {
+    transition:.3s
+    }
+    
+    .input:focus, .select:focus, .button:hover {
+    background-color:#e6f0ff;
+    color:black;
+    }
+    

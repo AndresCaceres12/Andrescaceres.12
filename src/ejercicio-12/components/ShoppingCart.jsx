@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Navbar } from "./navbar";
 import { CarritoContext } from "../contexts/ShoppingCartcontents";
+import "./diseñoTienda.css"
 
 export const ShoppingCart = () => {
   const { cart, setCart } = useContext(CarritoContext);

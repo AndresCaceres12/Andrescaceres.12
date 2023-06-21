@@ -1,4 +1,5 @@
 import React from "react";
+import "./diseñoTienda.css"
 
 export const Items = ({ id, nombre, precio, imagen, cantidad, addToCart }) => {
   const handleClick = () => {
@@ -15,7 +16,7 @@ export const Items = ({ id, nombre, precio, imagen, cantidad, addToCart }) => {
   return (
     <div className="item-box">
       <div>{nombre}</div>
-      <img src={imagen} alt="" width="120" />
+      <img src={imagen} alt="" width="100%" />
       <div className="item-price">${precio}</div>
       <button className='item-add-button' onClick={handleClick}>
         + Añadir producto

@@ -1,0 +1,156 @@
+.contienePelis {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+  background-color: #121113;
+  height: 100vh;
+  width: 100%;
+  color: white;
+}
+
+.contienePelis h2 {
+  width: 100%;
+}
+.contienePelis h3 {
+  margin-bottom: 10px;
+}
+.contienePelis p {
+  margin-bottom: 10px;
+}
+.CadaPeli {
+  border: 2px solid transparent;
+
+  margin: 22px;
+  margin-right: 10px;
+  width: 15%;
+}
+.CadaPeli img {
+  margin: 20px;
+  margin-bottom: 10px;
+}
+.CadaPeli:hover {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  cursor: pointer;
+}
+.CadaPeli {
+  overflow: hidden;
+}
+/* mi otro apartado para pelis */
+/* .contieneInfo {
+  display: flex;
+  justify-content: space-between;
+  background-color: #121113;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+.tutuloo{
+    background-color: #121113;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+.tutuloo h2{
+    width: 50%;
+    padding: 20px;
+    text-align: right;
+}
+.ImagenP {
+  width: 50%;
+  height: 95vh;
+  
+  
+  text-align: right;
+}
+.ImagenP img{
+    
+ 
+}
+.DescripcionP {
+  width: 50%;
+  display: flex;
+flex-direction: column;
+  justify-content:left;
+  text-align: center;
+}
+.DescripcionP h2{
+    margin-top: px;
+}
+.DescripcionP p{
+    width: 50%;
+} */
+
+/* chat gpt
+.tutuloo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contieneInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .ImagenP img {
+    width: 400px;
+  }
+  
+  .DescripcionP {
+    margin-left: 20px;
+  }
+  
+  .DescripcionP h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .DescripcionP p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+   */
+
+   .tutuloo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #121113;
+    color: white;
+  }
+  
+  .contieneInfo {
+    display: flex;
+    align-items: flex-start;
+    background-color: #121113;
+    color: white;
+    padding: 20px;
+  }
+  
+  .ImagenP {
+    margin-right: 20px;
+    width: 40%;
+  }
+  
+  .ImagenP img {
+    width: 75%;
+    margin-left: 30px;
+  }
+  
+  .DescripcionP {
+    width: 60%;
+    margin-top: 80px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    margin-top: 30px;
+    text-align: center;
+  }

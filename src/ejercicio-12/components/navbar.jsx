@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import "./diseñoTienda.css"
 import { CarritoContext } from '../contexts/ShoppingCartcontents';
 
 export const Navbar = () => {
@@ -13,7 +14,7 @@ export const Navbar = () => {
 
   return (
     <nav>
-      <Link to={"/ejercicio11"} style={style}>
+      <Link to={"/ejercicio12"} style={style}>
         <h2 className='botonli'>tienda</h2>
       </Link>
       <ul className='nav-list'>
