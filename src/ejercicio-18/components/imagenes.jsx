@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Imagenes() {
   const [check, setCheck] = useState(Image);
 
-  const eliminar = (id) => {
+  const eliminar  = (id) => {
     const updatedTareas = check.filter((image) => image.id !== id);
     setCheck(updatedTareas);
   };

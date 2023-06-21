@@ -15,6 +15,7 @@
   }
   .imagenLibro{
     width: 50%;
+    margin: auto;
     
   }
   .imagenLibro img{

@@ -64,7 +64,11 @@ const PrincipalRestaurantes = () => {
               onChange={handleInput}
             />
             <div className="d-grid gap-2 col-6 mx-auto">
-              <button type="button" className="btn btn-success" onClick={filtrado}>
+              <button
+                type="button"
+                className="btn btn-success"
+                onClick={filtrado}
+              >
                 Aplicar
               </button>
               <button type="button" className="btn btn-dark" onClick={quitarF}>
@@ -98,7 +102,11 @@ const PrincipalRestaurantes = () => {
               {restaurante.teléfono}
             </b>
             <div className="restaurante-sitio-container">
-              <a className="btn btn-outline-dark" target="_blank" href={restaurante.sitioweb}>
+              <a
+                className="btn btn-outline-dark"
+                target="_blank"
+                href={restaurante.sitioweb}
+              >
                 Sitio web
               </a>
             </div>

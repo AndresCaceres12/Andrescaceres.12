@@ -10,8 +10,6 @@ const TareasPrincipal = (props) => {
     settareas("");
   };
 
-  
-
   return (
     <div className="containerDeTareas">
       <form onSubmit={HandleSubmit}>
@@ -23,9 +21,7 @@ const TareasPrincipal = (props) => {
           value={tareas}
           onChange={(e) => settareas(e.target.value)}
         />
-        <button className="buttonDeTareas">
-          Agregar
-        </button>
+        <button className="buttonDeTareas">Agregar</button>
       </form>
     </div>
   );

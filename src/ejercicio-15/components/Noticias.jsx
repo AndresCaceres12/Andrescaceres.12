@@ -56,7 +56,7 @@ const Noticiass = ({ news }) => {
 
       <div className="input-group">
         <label className="label" htmlFor="category">
-          Categoria:
+          Categoria :
         </label>
         <select
           className="select"

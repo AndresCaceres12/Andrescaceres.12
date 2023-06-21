@@ -5,7 +5,7 @@ import { DndContext, closestCenter } from "@dnd-kit/core";
 import {
   SortableContext,
   verticalListSortingStrategy,
-  arrayMove
+  arrayMove,
 } from "@dnd-kit/sortable";
 import { TareaFinal } from "./TareaFinal";
 
@@ -37,11 +37,21 @@ export const RenderizarT = () => {
     <div id="fondoDeTareas" className="flex justify-center items-center">
       <div className="w-4/6">
         <div className="FondoT">
-          <DndContext collisionDetection={closestCenter} onDragEnd={HandleDragEnd}>
-            <SortableContext items={NewTaks} strategy={verticalListSortingStrategy}>
+          <DndContext
+            collisionDetection={closestCenter}
+            onDragEnd={HandleDragEnd}
+          >
+            <SortableContext
+              items={NewTaks}
+              strategy={verticalListSortingStrategy}
+            >
               <TareasPrincipal RecibeTaks={RecibeTaks} />
               {NewTaks.map((tarea) => (
-                <TareaFinal key={tarea.id} tareass={tarea} onDelete={EliminarTarea} />
+                <TareaFinal
+                  key={tarea.id}
+                  tareass={tarea}
+                  onDelete={EliminarTarea}
+                />
               ))}
             </SortableContext>
           </DndContext>

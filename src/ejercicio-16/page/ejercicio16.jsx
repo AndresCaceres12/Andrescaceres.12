@@ -5,8 +5,8 @@ import ApartadoP from '../components/ApartadoP';
   
   return (
     <div>
-        <MovieList/>
-        <ApartadoP/>
+        <MovieList />
+        <ApartadoP />
     </div>
   )
 }

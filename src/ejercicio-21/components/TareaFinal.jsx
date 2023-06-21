@@ -1,7 +1,6 @@
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 
-
 export const TareaFinal = ({ tareass, onDelete }) => {
   const { attributes, listeners, setNodeRef, transform, transition } =
     useSortable({

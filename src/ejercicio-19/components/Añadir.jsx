@@ -104,7 +104,7 @@ const Añadir = () => {
           <div key={perfil.id} className="perfil-item">
             <>
               <h3>{perfil.nombre}</h3>
-              <p>{perfil.correoElectronico}</p>
+              <p> {perfil.correoElectronico}</p>
               <img
                 src={perfil.fotoPerfil}
                 alt="Foto de perfil"

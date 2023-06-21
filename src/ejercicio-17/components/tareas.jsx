@@ -109,7 +109,7 @@ export const Tareas = () => {
                 onClick={() => EditaTexto(index)}
                 className={`tarea-texto ${
                   tarea.completada ? "completada" : ""
-                }`}
+                }`} 
               >
                 {tarea.texto}
               </span>

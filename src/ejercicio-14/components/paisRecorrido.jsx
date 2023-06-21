@@ -6,7 +6,7 @@ export const PaisRecorrido = ({ paisSeleccionado }) => {
   const pais = PaisesInfo.find((pais) => pais.nombre === paisSeleccionado);
 
   if (!pais) {
-    return <p>No se encontró información para el país seleccionado</p>;
+    return <p>No se encontró información para el país seleccionado vuelve a intentar</p>;
   }
 
   return (

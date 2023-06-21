@@ -9,7 +9,7 @@ import { Navbar } from "./navbar";
 export const Componente1 = ({ addToCart }) => {
   return (
     <div className="items-list">
-      {Datos.map((produc, idx) => {
+      {Datos.map((produc, id) => {
         return <Items key={produc.id} addToCart={addToCart} {...produc} />;
       })}
     </div>
