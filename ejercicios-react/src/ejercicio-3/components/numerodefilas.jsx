@@ -1,7 +1,6 @@
 import React from 'react';
 import { ReactDOM } from 'react';
 const NumberList = ({ number }) => {
-  // Crear una matriz de números del 1 al número indicado
   const numbersArray = Array.from({ length: number }, (_, index) => index + 1);
 
   return (
