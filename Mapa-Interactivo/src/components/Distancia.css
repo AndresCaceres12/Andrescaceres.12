@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap');
+
+.distancia-container {
+    margin-top: 20px;
+  } 
+  .calcular-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+
+  .distancia-heading {
+    font-family: 'Archivo', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .distance-text {
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .ContainerDistancias{
+    display: flex ;
+    gap: 30px;
+  }
+  .ContainerDistancias div{
+    border: 2px solid black;
+    background-color: #f1f2f3;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
