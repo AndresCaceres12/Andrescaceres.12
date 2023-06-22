@@ -5,7 +5,7 @@ import "leaflet/dist/leaflet.css";
 import { Ubicaciones } from "./Ubicaciones";
 import Distancia from "./Distancia";
 
-const MapaInteract = () => {
+const MapaInteractivo = () => {
   const [mostrarMapa, setMostrarMapa] = useState(false);
   const [currentLocation, setCurrentLocation] = useState(null);
   const [selectedPlaces, setSelectedPlaces] = useState([]);
@@ -54,8 +54,14 @@ const MapaInteract = () => {
       // Obtiene los lugares cercanos de la respuesta de la API
 
       // Actualiza el estado de los lugares cercanos
-      setNearbyPlaces([...nearbyPlaces, { name: "Lugar cercano 1", lat: 40.7128, lon: -74.0060 }]);
-      setNearbyPlaces([...nearbyPlaces, { name: "Lugar cercano 2", lat: 37.7749, lon: -122.4194 }]);
+      setNearbyPlaces([
+        ...nearbyPlaces,
+        { name: "Lugar cercano 1", lat: 40.7128, lon: -74.006 },
+      ]);
+      setNearbyPlaces([
+        ...nearbyPlaces,
+        { name: "Lugar cercano 2", lat: 37.7749, lon: -122.4194 },
+      ]);
     } catch (error) {
       console.error("Error al buscar lugares cercanos:", error);
     }
@@ -85,7 +91,11 @@ const MapaInteract = () => {
             </Marker>
           ))}
           {nearbyPlaces.map((place) => (
-            <Marker key={place.name} position={[place.lat, place.lon]} icon={greenIcon}>
+            <Marker
+              key={place.name}
+              position={[place.lat, place.lon]}
+              icon={greenIcon}
+            >
               <Popup>{place.name}</Popup>
             </Marker>
           ))}
@@ -106,4 +116,4 @@ const MapaInteract = () => {
   );
 };
 
-export default MapaInteract;
+export default MapaInteractivo;
