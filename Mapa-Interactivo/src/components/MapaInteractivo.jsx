@@ -9,7 +9,6 @@ const MapaInteractivo = () => {
   const [mostrarMapa, setMostrarMapa] = useState(false);
   const [currentLocation, setCurrentLocation] = useState(null);
   const [selectedPlaces, setSelectedPlaces] = useState([]);
-  const [nearbyPlaces, setNearbyPlaces] = useState([]);
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -45,28 +44,6 @@ const MapaInteractivo = () => {
   const handlePlaceSelection = (place) => {
     setSelectedPlaces((prevPlaces) => [...prevPlaces, place]);
   };
-
-  const searchNearbyPlaces = async (latitude, longitude) => {
-    try {
-      // Realiza una solicitud a la API de búsqueda de lugares cercanos
-      // utilizando las coordenadas actuales (latitude, longitude)
-
-      // Obtiene los lugares cercanos de la respuesta de la API
-
-      // Actualiza el estado de los lugares cercanos
-      setNearbyPlaces([
-        ...nearbyPlaces,
-        { name: "Lugar cercano 1", lat: 40.7128, lon: -74.006 },
-      ]);
-      setNearbyPlaces([
-        ...nearbyPlaces,
-        { name: "Lugar cercano 2", lat: 37.7749, lon: -122.4194 },
-      ]);
-    } catch (error) {
-      console.error("Error al buscar lugares cercanos:", error);
-    }
-  };
-
   return (
     <>
       {mostrarMapa && (
@@ -90,18 +67,8 @@ const MapaInteractivo = () => {
               <Popup>{place.name}</Popup>
             </Marker>
           ))}
-          {nearbyPlaces.map((place) => (
-            <Marker
-              key={place.name}
-              position={[place.lat, place.lon]}
-              icon={greenIcon}
-            >
-              <Popup>{place.name}</Popup>
-            </Marker>
-          ))}
         </MapContainer>
       )}
-
       <button onClick={toggleMapa}>
         {mostrarMapa ? "Ocultar Todo" : "Mostrar Mapa"}
       </button>
